@@ -11,25 +11,6 @@ const API_KEY = process.env.REACT_APP_GIPHY_API_KEY;
 
 const Random = () => {
 
-        // const[gif, setGif] = useState('');
-    // const[loading, setLoading] = useState('false');
-    
-    // // API
-    // async function fetchData(){
-    //     setLoading(true);
-    //     const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`;
-    //     // fetch data
-    //     const {data} = await axios.get(url);
-    //     // fetch image from api's url
-    //     const imageSource = data.data.images.downsized_larged.url;
-    //     setGif(imageSource);
-    //     setLoading(false);
-    // }
-
-    // useEffect( () => {
-    //     fetchData();
-    // },[])
-
   const {gif, loading, fetchData} = useGif();
 
 
