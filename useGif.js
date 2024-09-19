@@ -15,7 +15,6 @@ const useGif = (tag) => {
   
     async function fetchData(tag) {
       setLoading(true);
-    //   if tag hit hoga to tag wala url chlega vrna random wala
       const {data} = await axios.get(tag ? `${url}&tag=${tag}`  : url);
       const imageSource = data.data.images.downsized_large.url;
       setGif(imageSource);
